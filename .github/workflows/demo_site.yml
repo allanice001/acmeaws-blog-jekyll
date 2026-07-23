@@ -13,14 +13,14 @@ jobs:
       BUNDLE_RETRY: 3
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3
         with:
           repository: jekyll/minima
           ref: demo-site
       - name: Set up Ruby 2.7
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7.8
+          ruby-version: 3.4.10
           bundler-cache: true
       - name: Clone target branch
         run: |
