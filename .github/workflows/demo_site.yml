@@ -13,7 +13,7 @@ jobs:
       BUNDLE_RETRY: 3
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
           repository: jekyll/minima
           ref: demo-site
